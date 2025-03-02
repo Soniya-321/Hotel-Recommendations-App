@@ -19,7 +19,7 @@ function Payment() {
       if (!hotelId) return;
 
       try {
-        const response = await fetch(`http://127.0.0.1:5000/hotels/${hotelId}`);
+        const response = await fetch(`https://hotel-recommendations-app.onrender.com/hotels/${hotelId}`);
         const data = await response.json();
         setHotel(data);
       } catch (error) {
