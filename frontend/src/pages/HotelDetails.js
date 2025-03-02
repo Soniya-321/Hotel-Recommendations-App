@@ -17,7 +17,7 @@ function HotelDetails() {
   const navigate = useNavigate();
 
   useEffect(() => {
-    fetch(`http://127.0.0.1:5000/hotels/${hotel_id}`)
+    fetch(`https://hotel-recommendations-app.onrender.com/hotels/${hotel_id}`)
       .then((response) => response.json())
       .then((data) => setHotel(data))
       .then((response) => console.log(hotel_id))
