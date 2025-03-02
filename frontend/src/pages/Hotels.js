@@ -20,7 +20,7 @@ function Hotels() {
     };
     console.log(JSON.stringify(preferences));
     
-    const url = `http://127.0.0.1:5000/recommend?preferences=${JSON.stringify(preferences)}`;
+    const url = `https://hotel-recommendations-app.onrender.com/recommend?preferences=${JSON.stringify(preferences)}`;
     
     try {
       const response = await fetch(url);
