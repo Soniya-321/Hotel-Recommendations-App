@@ -1,4 +1,4 @@
 export const fetchHotels = async (location) => {
-    const response = await fetch(`http://127.0.0.1:5000/hotels`);
+    const response = await fetch(`https://hotel-recommendations-app.onrender.com/hotels`);
     return await response.json();
   };
