@@ -24,7 +24,7 @@ function Search() {
 
   const handleSearch = async () => {
     try {
-      const response = await fetch(`http://127.0.0.1:5000/hotels`);
+      const response = await fetch(`https://hotel-recommendations-app.onrender.com/hotels`);
       const data = await response.json();
       setHotels(data);
       console.log(data);
